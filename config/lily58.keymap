@@ -13,6 +13,7 @@
 #define LOWER 1
 #define RAISE 2
 #define FPS 3
+#define GEEMU 4
 
 / {
 	keymap {
@@ -90,5 +91,37 @@
     sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
+        geemu_layer {
+// ------------------------------------------------------------------------------------------------------------
+// |   |   |   |   |   |   |                    |   |   |   |   |   |   |
+// |   |   |   |   |   |   |                    |   |   |   |   |   |   |
+// |   |   |   |   |   |   |                    |   |   |   |   |   |   |
+// |   |   |   |   |   |   |   |            |   |   |   |   |   |   |   |
+//                     |   |   |            |   |   |   |   |   |   |   |
+    bindings = <
+&trans    &trans &trans   &trans   &trans    &trans                           &trans      &trans    &trans    &trans  &trans   &trans
+&trans    &trans &trans   &kp UP   &trans    &trans                           &trans      &trans    &trans    &trans  &trans   &trans
+&kp LSHFT &trans &kp LEFT &kp DOWN &kp RIGHT &trans                           &trans      &trans    &trans    &trans  &trans   &trans
+&kp LCTRL &trans &trans   &trans   &trans    &kp D  &kp S         &to DEFAULT &trans      &trans    &trans    &trans  &trans   &trans
+                          &trans   &trans    &kp X  &kp Z         &trans      &trans      &trans    &trans
+    >;
+
+    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
 	};
 };
+
+// ------------------------------------------------------------------------------------------------------------
+// |   |   |   |   |   |   |                    |   |   |   |   |   |   |
+// |   |   |   |   |   |   |                    |   |   |   |   |   |   |
+// |   |   |   |   |   |   |                    |   |   |   |   |   |   |
+// |   |   |   |   |   |   |   |            |   |   |   |   |   |   |   |
+//                     |   |   |            |   |   |   |   |   |   |   |
+//    bindings = <
+//&trans &trans &trans   &trans   &trans    &trans                           &trans      &trans    &trans    &trans  &trans   &trans
+//&trans &trans &trans   &trans   &trans    &trans                           &trans      &trans    &trans    &trans  &trans   &trans
+//&trans &trans &trans   &trans   &trans    &trans                           &trans      &trans    &trans    &trans  &trans   &trans
+//&trans &trans &trans   &trans   &trans    &trans &trans        &to DEFAULT &trans      &trans    &trans    &trans  &trans   &trans
+//                       &trans   &trans    &trans &trans        &trans      &trans      &trans    &trans
+//    >;
