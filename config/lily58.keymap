@@ -100,7 +100,7 @@
 //                     |   |   |            |   |   |   |   |   |   |   |
     bindings = <
 &trans    &trans &trans   &trans   &trans    &trans                           &trans      &trans    &trans    &trans  &trans   &trans
-&trans    &trans &trans   &kp UP   &trans    &trans                           &trans      &trans    &trans    &trans  &trans   &trans
+&trans    &trans &trans   &kp UP   &kp E     &kp R                            &trans      &trans    &trans    &trans  &trans   &trans
 &kp LSHFT &trans &kp LEFT &kp DOWN &kp RIGHT &trans                           &trans      &trans    &trans    &trans  &trans   &trans
 &kp LCTRL &trans &trans   &trans   &trans    &kp D  &kp S         &to DEFAULT &trans      &trans    &trans    &trans  &trans   &trans
                           &trans   &trans    &kp X  &kp Z         &trans      &trans      &trans    &trans
