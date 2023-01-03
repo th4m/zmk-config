@@ -52,7 +52,7 @@
                                       &trans       &trans       &trans       &kp DEL    &kp PG_DN  &trans   &trans    &kp INS
 			>;
 
-			sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+			sensor-bindings = <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>;
 		};
 
 		raise_layer {
